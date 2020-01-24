@@ -1,8 +1,8 @@
-import list from './listReducer'
+import people from './peopleReducer'
 import { combineReducers } from 'redux'
 
 const reducers = {
-  list
+  people
 }
 
 export default combineReducers(reducers)

@@ -2,9 +2,9 @@ import React from 'react';
 import Row from './Row.js'
 import { useSelector } from 'react-redux';
 
-const List = (props) => {
+const List = () => {
 
-  const people = useSelector(state => state.list.payload)
+  const people = useSelector(state => state.people.payload)
 
   return (
     <div>

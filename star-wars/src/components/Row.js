@@ -5,16 +5,16 @@ const Row = (props) => {
   const { name, birth_year, films } = props.item
 
   return (
-    <p className='row'>
+    <div className='row'>
       <span>{name}</span>
       <span>{birth_year}</span>
-      <span className='film-box'>{films.map(film => {
+      <span className='film-box'>{films.map((film, index) => {
         return (
-          <div>{film}</div>
+          <div key={index}>{film}</div>
         )
       })}
       </span>
-    </p>
+    </div>
   )
 }
 
